@@ -11,3 +11,34 @@ div{
     margin: 3%;
     /* This new css k/v */
 }
+
+
+/* Div Formating for mobiles */
+[class*="col-"]{
+    font-size: 1em;
+    width: 94%;
+    background-color: lightcoral;
+}
+
+
+/* Div Formating for Desktop */
+@media only screen and (min-width: 768px){
+    [class*="col-d-"]{
+        font-size: 2em;
+        width: 27%;
+        background-color: lightgreen;
+    }
+}
+/* Div Formating for Tablets */
+@media only screen and (min-width: 600px){
+    [class*="col-t-"]{
+        /* Do these things */
+        font-size: 1.5em;
+        width: 44%;
+        background-color: yellow;
+
+    }
+    .col-d-3{
+        width: 94%;
+    }
+}
